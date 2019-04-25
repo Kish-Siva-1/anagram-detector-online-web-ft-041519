@@ -9,10 +9,10 @@ class Anagram
   end 
   
   def match(list)
-    [list.select do |element|
+    list.select do |element|
       #binding.pry
         @word.chars.sort.join("") == element.chars.sort.join("")
-    end] 
+    end
   end
   
 end 
